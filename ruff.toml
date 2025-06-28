@@ -1,0 +1,24 @@
+line-length = 100
+
+lint.select = ["ALL"]
+
+lint.ignore = [
+    "ANN401",  # any-type
+    "D205",  # blank-line-after-summary
+    "N818",  # error-suffix-on-exception-name
+    "PT009",  # pytest-unittest-assertion
+    "PT027",  # pytest-unittest-raises-assertion
+    "RUF012",  # mutable-class-default
+    "RUF001", # ambiguous-unicode-character-string
+    "RUF002", # ambiguous-unicode-character-docstring
+]
+
+exclude = [".git/"]
+
+target-version = "py312"
+
+[lint.flake8-quotes]
+inline-quotes = "single"
+
+[lint.pylint]
+max-args = 7
